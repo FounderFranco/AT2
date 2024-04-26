@@ -19,21 +19,20 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="circle_id" src="img/cir.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Death_id" src="img/DeathIcon1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Settings_id" src="img/SettingsIcon1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Cart_id" src="img/CartIcon1.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Restart_id" src="img/RestartIcon1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Skip_id" src="img/SkipIcon1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Spin_id" src="img/SpinIcon1.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Pet_id" src="img/PetIcon1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="Exit_id" src="img/ExitIcon1.png" height="200" width="200"/></div>
         </div>
         
     </body>
@@ -41,17 +40,116 @@
 </html>
 
 <script>
+    // Icon 1
     const slide_sound = document.createElement ("audio")
     slide_sound.src = "sounds/Sound4.mp3"
     
-    const circle_element = document.getElementById ("circle_id")
+    const circle_element = document.getElementById ("Death_id")
     circle_element.onpointerover = () => {
-        circle_element.src = "img/hex.png"
+        circle_element.src = "img/DeathIcon2.png"
     }
     circle_element.onpointerout = () => {
-        circle_element.src = "img/cir.png"
+        circle_element.src = "img/DeathIcon1.png"
     }
     circle_element.onpointerdown = () => {
         slide_sound.play ()
     }
+    // Icon 2
+    const slide1_sound = document.createElement ("audio")
+    slide1_sound.src = "sounds/Sound4.mp3"
+    
+    const triangle_element = document.getElementById ("Settings_id")
+    triangle_element.onpointerover = () => {
+        triangle_element.src = "img/SettingsIcon2.png"
+    }
+    triangle_element.onpointerout = () => {
+        triangle_element.src = "img/SettingsIcon1.png"
+    }
+    triangle_element.onpointerdown = () => {
+        slide1_sound.play ()
+    }
+    // Icon 3
+    const slide3_sound = document.createElement ("audio")
+    slide3_sound.src = "sounds/Sound4.mp3"
+    
+    const cart_element = document.getElementById ("Cart_id")
+    cart_element.onpointerover = () => {
+        cart_element.src = "img/CartIcon2.png"
+    }
+    cart_element.onpointerout = () => {
+        cart_element.src = "img/CartIcon1.png"
+    }
+    cart_element.onpointerdown = () => {
+        slide3_sound.play ()
+    }
+    // Icon 4
+    const slide4_sound = document.createElement ("audio")
+    slide4_sound.src = "sounds/Sound4.mp3"
+    
+    const restart_element = document.getElementById ("Restart_id")
+    restart_element.onpointerover = () => {
+        restart_element.src = "img/RestartIcon2.png"
+    }
+    restart_element.onpointerout = () => {
+        restart_element.src = "img/RestartIcon1.png"
+    }
+    restart_element.onpointerdown = () => {
+        slide4_sound.play ()
+    }
+    // Icon 5
+    const slide5_sound = document.createElement ("audio")
+    slide5_sound.src = "sounds/Sound4.mp3"
+    
+    const skip_element = document.getElementById ("Skip_id")
+    skip_element.onpointerover = () => {
+        skip_element.src = "img/SkipIcon2.png"
+    }
+    skip_element.onpointerout = () => {
+        skip_element.src = "img/SkipIcon1.png"
+    }
+    skip_element.onpointerdown = () => {
+        slide5_sound.play ()
+    }
+    // Icon 6
+    const slide6_sound = document.createElement ("audio")
+    slide6_sound.src = "sounds/Sound4.mp3"
+    
+    const spin_element = document.getElementById ("Spin_id")
+    spin_element.onpointerover = () => {
+        spin_element.src = "img/SpinIcon2.png"
+    }
+    spin_element.onpointerout = () => {
+        spin_element.src = "img/SpinIcon1.png"
+    }
+    spin_element.onpointerdown = () => {
+        slide6_sound.play ()
+    }
+    // Icon 7
+    const slide7_sound = document.createElement ("audio")
+    slide7_sound.src = "sounds/Sound4.mp3"
+    
+    const pet_element = document.getElementById ("Pet_id")
+    pet_element.onpointerover = () => {
+        pet_element.src = "img/PetIcon2.png"
+    }
+    pet_element.onpointerout = () => {
+        pet_element.src = "img/PetIcon1.png"
+    }
+    pet_element.onpointerdown = () => {
+        slide7_sound.play ()
+    }
+    // Icon 8
+    const slide8_sound = document.createElement ("audio")
+    slide8_sound.src = "sounds/Sound4.mp3"
+    
+    const exit_element = document.getElementById ("Exit_id")
+    exit_element.onpointerover = () => {
+        exit_element.src = "img/ExitIcon2.png"
+    }
+    exit_element.onpointerout = () => {
+        exit_element.src = "img/ExitIcon1.png"
+    }
+    exit_element.onpointerdown = () => {
+        slide8_sound.play ()
+    } 
 </script>
